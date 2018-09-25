@@ -5,7 +5,11 @@ jp = ['ichi', 'ni', 'san', 'yon', 'go', 'roku', 'nana', 'hachi', 'kyu']
 
 new_hash = {}
 digits.each do |digit|
-  new_hash[digit] = {french: fr[digit.to_i-1], english: en[digit.to_i-1], japanese: jp[digit.to_i-1]}
+  new_hash[digit] = {
+    french: fr[digit.to_i-1],
+    english: en[digit.to_i-1],
+    japanese: jp[digit.to_i-1]
+  }
 end
 
 puts new_hash
